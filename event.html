@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Update Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        display: flex;
+      }
+
+      .image-container {
+        border: 2px solid black;
+        flex: 1;
+        padding-right: 20px;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .form-container {
+        flex: 2;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin: 10px 0;
+      }
+
+      input,
+      select {
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      button {
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+      }
+
+      #submit-btn {
+        background-color: #4caf50;
+        color: #fff;
+      }
+
+      #cancel-btn {
+        background-color: #f44336;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img alt="Event Image" />
+      </div>
+      <div class="form-container">
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone No:</label>
+          <input type="text" id="phone" name="phone" required />
+
+          <label for="seats">Number of Seats:</label>
+          <select id="seats" name="seats" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+
+          <label for="attendee2">Name of Attendee 2:</label>
+          <input type="text" id="attendee2" name="attendee2" />
+
+          <div class="buttons">
+            <button type="submit" id="submit-btn">Submit</button>
+            <button type="button" id="cancel-btn">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
